@@ -54,7 +54,7 @@ main {
     // flex-wrap: wrap;
     gap: 30px;
     position: relative;
-    section {
+    .section {
       padding: 45px;
       background-color: $dark;
       border-radius: 10px;
@@ -191,7 +191,7 @@ footer {
   main {
     background-position: bottom;
   }
-  main .container section.storage-plan .progress {
+  main .container .section.storage-plan .progress {
     width: 300px;
   }
 }
@@ -206,13 +206,13 @@ footer {
     max-width: 100%;
     gap: 15px;
   }
-  main .container section.storage-plan {
+  main .container .section.storage-plan {
     position: relative;
   }
-  main .container section.storage-plan .progress {
+  main .container .section.storage-plan .progress {
     max-width: 100%;
   }
-  main .container section.storage-plan .available-space {
+  main .container .section.storage-plan .available-space {
     left: 50%;
     transform: translate(-50%, 50%);
     top: auto;
@@ -222,16 +222,16 @@ footer {
       content: none;
     }
   }
-  main .container section {
+  main .container .section {
     max-width: 100%;
   }
 }
 @media (max-width: 425px) {
-  main .container section {
+  main .container .section {
     padding: 30px;
     width: 100%;
   }
-  main .container section.storage-plan .available-space {
+  main .container .section.storage-plan .available-space {
     width: fit-content;
     padding: 10px;
   }

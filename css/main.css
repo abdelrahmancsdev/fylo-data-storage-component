@@ -48,19 +48,19 @@ main .container {
   gap: 30px;
   position: relative;
 }
-main .container section {
+main .container .section {
   padding: 45px;
   background-color: var(--dark-blue);
   border-radius: 10px;
 }
-main .container section.options {
+main .container .section.options {
   border-top-right-radius: 90px;
   padding-right: 120px;
 }
-main .container section.options .logo {
+main .container .section.options .logo {
   margin-bottom: 30px;
 }
-main .container section.options .icons {
+main .container .section.options .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -72,7 +72,7 @@ main .container section.options .icons {
           justify-content: center;
   gap: 15px;
 }
-main .container section.options .icons .option {
+main .container .section.options .icons .option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,13 +88,13 @@ main .container section.options .icons .option {
   border-radius: 5px;
   cursor: pointer;
 }
-main .container section.storage-plan .number {
+main .container .section.storage-plan .number {
   font-weight: bold;
 }
-main .container section.storage-plan .usage-details {
+main .container .section.storage-plan .usage-details {
   margin-bottom: 15px;
 }
-main .container section.storage-plan .available-space {
+main .container .section.storage-plan .available-space {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@ main .container section.storage-plan .available-space {
   border-bottom-right-radius: 0px;
   font-weight: bold;
 }
-main .container section.storage-plan .available-space::after {
+main .container .section.storage-plan .available-space::after {
   content: "";
   position: absolute;
   border: 20px solid #fff;
@@ -122,16 +122,16 @@ main .container section.storage-plan .available-space::after {
   bottom: -19px;
   right: 0px;
 }
-main .container section.storage-plan .available-space .number {
+main .container .section.storage-plan .available-space .number {
   font-size: 36px;
   color: var(--very-dark-blue);
 }
-main .container section.storage-plan .available-space .gray {
+main .container .section.storage-plan .available-space .gray {
   color: var(--grayish-blue);
   text-transform: uppercase;
   font-size: 12px;
 }
-main .container section.storage-plan .progress {
+main .container .section.storage-plan .progress {
   width: 450px;
   height: 20px;
   background-color: var(--very-dark-blue);
@@ -139,7 +139,7 @@ main .container section.storage-plan .progress {
   border: 3px solid var(--very-dark-blue);
   position: relative;
 }
-main .container section.storage-plan .progress .bar {
+main .container .section.storage-plan .progress .bar {
   width: 81.5%;
   height: 100%;
   background-color: var(--dark-blue);
@@ -148,7 +148,7 @@ main .container section.storage-plan .progress .bar {
   position: relative;
   border-radius: inherit;
 }
-main .container section.storage-plan .progress .bar::after {
+main .container .section.storage-plan .progress .bar::after {
   content: "";
   position: absolute;
   background-color: #fff;
@@ -160,7 +160,7 @@ main .container section.storage-plan .progress .bar::after {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-main .container section.storage-plan .storage-range {
+main .container .section.storage-plan .storage-range {
   margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -230,7 +230,7 @@ footer .content span a:hover {
   main {
     background-position: bottom;
   }
-  main .container section.storage-plan .progress {
+  main .container .section.storage-plan .progress {
     width: 300px;
   }
 }
@@ -246,13 +246,13 @@ footer .content span a:hover {
     max-width: 100%;
     gap: 15px;
   }
-  main .container section.storage-plan {
+  main .container .section.storage-plan {
     position: relative;
   }
-  main .container section.storage-plan .progress {
+  main .container .section.storage-plan .progress {
     max-width: 100%;
   }
-  main .container section.storage-plan .available-space {
+  main .container .section.storage-plan .available-space {
     left: 50%;
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
@@ -260,19 +260,19 @@ footer .content span a:hover {
     bottom: 0px;
     border-bottom-right-radius: 10px;
   }
-  main .container section.storage-plan .available-space::after {
+  main .container .section.storage-plan .available-space::after {
     content: none;
   }
-  main .container section {
+  main .container .section {
     max-width: 100%;
   }
 }
 @media (max-width: 425px) {
-  main .container section {
+  main .container .section {
     padding: 30px;
     width: 100%;
   }
-  main .container section.storage-plan .available-space {
+  main .container .section.storage-plan .available-space {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;

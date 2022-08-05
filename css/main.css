@@ -140,13 +140,17 @@ main .container .section.storage-plan .progress {
   position: relative;
 }
 main .container .section.storage-plan .progress .bar {
-  width: 81.5%;
+  width: 14px;
   height: 100%;
   background-color: var(--dark-blue);
   background-image: -webkit-gradient(linear, left top, right top, from(hsl(4deg, 81%, 78%)), to(hsl(334deg, 91%, 67%)));
   background-image: linear-gradient(to right, hsl(4deg, 81%, 78%), hsl(334deg, 91%, 67%));
   position: relative;
   border-radius: inherit;
+  -webkit-animation: bar-load 1.2s ease-in;
+          animation: bar-load 1.2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 main .container .section.storage-plan .progress .bar::after {
   content: "";
@@ -277,5 +281,15 @@ footer .content span a:hover {
     width: -moz-fit-content;
     width: fit-content;
     padding: 10px;
+  }
+}
+@-webkit-keyframes bar-load {
+  to {
+    width: 81.5%;
+  }
+}
+@keyframes bar-load {
+  to {
+    width: 81.5%;
   }
 }/*# sourceMappingURL=main.css.map */
